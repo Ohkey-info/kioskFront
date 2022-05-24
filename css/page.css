@@ -1,16 +1,6 @@
 /* font */
 /* 나눔고딕 */
-.notice div:nth-child(1),
-.notice div:nth-child(1) ul li,
-.notice div:nth-child(2) h2,
-.event_show ul li dl dd {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #333333;
-    /* font-weight: normal; Light */
-    /* font-weight: lighter; Regular */
-    /* font-weight: bold; Bold */
-    /* font-weight: bolder; Extra Bold */
-}
+
 
 .m_information {
     display: none;
@@ -23,8 +13,7 @@
 
     /* main index */
     /* 영역 */
-    .main_index .event_new_menu h2,
-    .main_index .burgerking_num>div,
+    
     .top_banner div,
     .guide_app div,
     .inquiry_page .inquiry_num .wrap,
@@ -36,21 +25,7 @@
     }
 
     /* button , hover */
-    .main_index .location>a,
-    .main_index .event h2 a,
-    .main_index .event_new_menu a,
-    .main_index .delivery article div a,
-    .main_index .menu_introduction figcaption a,
-    .main_index .application .floatLeft a {
-        display: block;
-        width: 135px;
-        text-align: center;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: 0.5s;
-        font-size: 15px;
-        font-weight: bold;
-    }
+   
 
     /* 스크롤 이벤트 */
     [data-scroll="transform_L"] {
@@ -89,12 +64,14 @@
 
     /* //main index */
     /* login index */
+   
     section.login_page {
         background: url(../images/bg_login.jpg) no-repeat center / cover;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 45px 0;
+        height : 85vh;
     }
 
     section.login_page>div {
@@ -1207,21 +1184,7 @@
     }
 
     /* button , hover */
-    .main_index .location>a,
-    .main_index .event h2 a,
-    .main_index .event_new_menu a,
-    .main_index .delivery article div a,
-    .main_index .menu_introduction figcaption a,
-    .main_index .application .floatLeft a {
-        display: block;
-        width: 135px;
-        text-align: center;
-        padding: 10px 20px;
-        border-radius: 5px;
-        transition: 0.5s;
-        font-size: 15px;
-        font-weight: bold;
-    }
+
 
     /* 스크롤 이벤트 */
     [data-scroll="transform_L"] {
@@ -1265,12 +1228,13 @@
 
     /* //main index */
     /* login index */
-    section.login_page {
+    section.login_page { /*login_page*/
         background: url(../images/bg_login.jpg) no-repeat center / cover;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 45px 0;
+        height: 85vh;
     }
 
     section.login_page>div {
@@ -1805,7 +1769,7 @@
         font-size: 15px;
     }
 
-    .head_banner div:nth-child(2) {
+    .head_banner div:nth-child(2) { /*분류 보기의 박스*/
         border: 1px solid rgba(0, 0, 0, 0.3);
         box-sizing: border-box;
         border-radius: 5px;
@@ -1842,10 +1806,10 @@
         margin-bottom: 30px;
     }
 
-    .head_banner div:nth-child(2) ul li {
-        padding: 10px 80px;
+    .head_banner div:nth-child(2) ul li { /*카테고리*/
+        padding: 10px 80px; /*상하 좌우*/
         background-color: #F9F8F4;
-        margin: 0 0 20px 30px;
+        margin: 0 0 50px 30px; /*좌우 상하*/
         cursor: pointer;
         border-radius: 5px;
     }
@@ -1855,37 +1819,38 @@
         color: white;
     }
 
-    .head_banner div:nth-child(2) ol {
+    .head_banner div:nth-child(2) ol { /**/
         margin-left: 30px;
         margin-bottom: 45px;
+        
     }
 
-    .head_banner div:nth-child(2) ol li {
+    .head_banner div:nth-child(2) ol li { /**/
         float: left;
-        padding-left: 25px;
+        padding-left: 50px;
         position: relative;
-        margin-right: 30px;
+        margin-right: 50px;
         font-family: 'Nanum Gothic', sans-serif;
-        font-size: 14px;
+        font-size: 30px;
         font-weight: 900;
         cursor: pointer;
-        line-height: 15px;
+        line-height: 30px;
     }
 
     .head_banner div:nth-child(2) ol li::before {
         content: '';
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
         border: 1px solid black;
         position: absolute;
         top: 0;
         left: 0;
     }
 
-    .head_banner div:nth-child(2) ol li.active::after {
+    .head_banner div:nth-child(2) ol li.active::after { /*클릭 후 화살표*/
         content: '';
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
         position: absolute;
         top: 0;
         left: 1px;

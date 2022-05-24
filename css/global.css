@@ -1,5 +1,6 @@
 .floatLeft {
-    float: left; /*왼쪽*/
+    float: left;
+    /*왼쪽*/
 }
 
 .floatRight {
@@ -35,71 +36,81 @@
     box-sizing: border-box;
     display: block;
     transition: .4s;
-  }
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #333;
     color: #FFF;
-  }
-  .btn.btn--reverse {
+}
+
+.btn.btn--reverse {
     background-color: #333;
     color: #FFF;
-  }
-  .btn.btn--reverse:hover {
+}
+
+.btn.btn--reverse:hover {
     background-color: transparent;
     color: #333;
-  }
-  .btn.btn--brown {
+}
+
+.btn.btn--brown {
     color: #592B18;
     border-color: #592B18;
-  }
-  .btn.btn--brown:hover {
+}
+
+.btn.btn--brown:hover {
     color: #FFF;
     background-color: #592B18;
-  }
+}
 
-  .btn.btn--royalblue {
-      color: royalblue;
-      border-color: royalblue;
-  }
+.btn.btn--royalblue {
+    color: royalblue;
+    border-color: royalblue;
+}
 
-  .btn.btn--royalblue:hover {
+.btn.btn--royalblue:hover {
     color: #FFF;
     background-color: royalblue;
-  }
+}
 
-  .btn.btn--red {
+.btn.btn--red {
     color: red;
     border-color: red;
 }
 
 .btn.btn--red:hover {
-  color: #FFF;
-  background-color: red;
+    color: #FFF;
+    background-color: red;
 }
-  .btn.btn--gold {
+
+.btn.btn--gold {
     color: #D9AA8A;
     border-color: #D9AA8A;
-  }
-  .btn.btn--gold:hover {
+}
+
+.btn.btn--gold:hover {
     color: #FFF;
     background-color: #D9AA8A;
-  }
-  .btn.btn--white {
+}
+
+.btn.btn--white {
     color: #FFF;
     border-color: #FFF;
-  }
-  .btn.btn--white:hover {
+}
+
+.btn.btn--white:hover {
     color: #333;
     background-color: #FFF;
-  }
+}
 
-@media screen and (min-width : 750px) and (max-width: 1200px)  {
+@media screen and (min-width : 750px) and (max-width: 1200px) {
 
 
 
-/*최소 넓이를 750px로 최대넓이를 2400px로 */
+    /*최소 넓이를 750px로 최대넓이를 2400px로 */
     /* max-width */
-    header>div {/*동국 로고와 옆에 아이콘들 조정*/
+    header>div {
+        /*동국 로고와 옆에 아이콘들 조정*/
         max-width: 1000px;
         margin: 0 auto;
         /*padding: -5%;*/
@@ -144,7 +155,7 @@
         display: block;
     }
 
-    .mobile_icon>a:nth-child(1){
+    .mobile_icon>a:nth-child(1) {
         background: url('../images/photo_Camera.png') no-repeat center / contain;
         margin-top: 15px;
         margin-right: 20px;
@@ -154,7 +165,7 @@
         background: url('../images/Login.png') no-repeat center / contain;
         margin: 15px 20px 0 0;
     }
-  
+
     .mobile_icon>div span {
         font-size: 30px;
         margin-top: 12px;
@@ -326,239 +337,240 @@
 
 }
 
-@media screen and  (min-width: 1200px)  {
+@media screen and (min-width: 1200px) {
 
 
 
     /*최소 넓이를 750px로 최대넓이를 2400px로 */
-        /* max-width */
-        header>div {/*동국 로고와 옆에 아이콘들 조정*/
-            max-width: 1800x;
-            margin: 0 auto; /*상하 auto*/
-            /*padding: -5%;*/
-        }
-    
-        /* header */
-        header {
-            background-color: #F6F5EF;
-            height: 60px;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 11;
-            transition-duration: 0.2s;
-            padding: 10px 0;
-        }
-    
-        section:nth-of-type(1) {
-            margin-top: 70px;
-        }
-    
-        header div h1 {
-            float: left;
-            max-width: 70px;
-            width: 5.86%;
-            min-width: 40px;
-            margin: 0 0 0 5%;
-        }
-    
-        header div h1 img {
-            width: 100%;
-            display: block;
-            margin-top: 0 auto;
-        }
-    
-        /* header icon span */
-        .mobile_icon>a {
-            height: 25px;
-            width: 30px;
-            line-height: 20px;
-            display: block;
-        }
-
-        .mobile_icon>a:nth-child(1){
-            background: url('../images/photo_Camera.png') no-repeat center / contain;
-            margin: 15px 20px;
-        }
-    
-        .mobile_icon>a:nth-child(2) {
-            background: url('../images/Login.png') no-repeat center / contain;
-            
-            margin-top: 15px;
-            margin-right: 20px;
-        }
-
-        
-
-        .mobile_icon>div span {
-            font-size: 30px;
-            margin-top: 12px;
-            height: 40px;
-            width: 40px;
-            display: block;
-            cursor: pointer;
-        }
-    
-        /* nav */
-        header div nav {
-            background-color: rgba(0, 0, 0, 0.7);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            clear: both;
-            z-index: 110;
-            overflow-y: scroll;
-            height: 100vh;
-            transform: translateX(100%);
-            transition: transform 0.35s ease-out;
-            /* transition: property duration timing-function delay */
-        }
-    
-        header div nav ul {
-            background-color: #111111;
-            width: 30%;
-            min-height: 100vh;
-        }
-    
-        nav>ul>li ol {
-            position: relative;
-        }
-    
-        nav ul li:not(:nth-child(1)) ol li:nth-child(1).active::after {
-            transform: rotateZ(135deg);
-        }
-    
-        /* nav active */
-        nav.active {
-            transform: translateX(0%);
-        }
-    
-        nav a {
-            color: white;
-            font-family: 'S-CoreDream-5Medium';
-            font-size: 12px;
-            position: relative;
-        }
-    
-        /* arrow btn */
-        nav ul li a span.material-icons {
-            position: absolute;
-            right: 20px;
-            font-size: 36px;
-            top: 10px;
-        }
-    
-        nav ul li a span.active {
-            transform: rotateZ(180deg);
-        }
-    
-        /* mobile_Search */
-        header ul li ol li {
-            padding: 20px 0 20px 30px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            transition: 0.3s;
-        }
-    
-        header ul li:not(:nth-child(1)) ol li:nth-child(1) {
-            display: none;
-        }
-    
-        .mobile_Search ol li input {
-            padding: 5px;
-            border: none;
-            width: 35%;
-            float: left;
-        }
-    
-        .mobile_Search ol li button {
-            padding: 5px;
-            background-color: #807C79;
-            color: white;
-            box-sizing: border-box;
-            float: left;
-            height: 35px;
-        }
-    
-        .mobile_Search ol li::after {
-            content: '';
-            display: block;
-            visibility: hidden;
-            clear: both;
-        }
-    
-        nav ul>li>a {
-            display: block;
-            padding: 20px 0 20px 30px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            transition: 0.3s;
-        }
-    
-        nav ul li ol li:not(:nth-child(1)) {
-            height: 0;
-            overflow: hidden;
-            padding: 0 0 0 40px;
-            border: none;
-        }
-    
-        nav ul li ol.active li:not(:nth-child(1)) {
-            height: 20px;
-            overflow: visible;
-            padding: 30px 0 30px 40px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
-    
-        nav ol li {
-            color: white;
-            font-family: 'S-CoreDream-5Medium';
-            font-size: 16px;
-        }
-    
-        nav ol li:not(:nth-child(1)) {
-            background-color: #25201D;
-        }
-    
-        nav ol li:not(:nth-child(1)) a {
-            margin-left: 20px;
-            display: block;
-        }
-    
-        /* nav close */
-        nav ul>li:nth-child(1) {
-            position: relative;
-        }
-    
-        nav ul>li:nth-child(1) span {
-            position: absolute;
-            color: white;
-            top: 30%;
-            left: -60px;
-            font-size: 36px;
-            cursor: pointer;
-        }
-    
-        /* Delivery Order */
-    
-    
-        /* top button 맨위로 가는 버튼*/
-        .top_button {
-            border: none;
-            position: fixed;
-            right: 20px;
-            bottom: 50px;
-            padding: 0;
-            cursor: pointer;
-            background-color: rgba(0, 0, 0, 0);
-            max-width: 5.86%;
-            min-width: 50px;
-            z-index: 9;
-        }
-    
-        .top_button img {
-            display: block;
-            width: 100%;
-        }
-    
+    /* max-width */
+    header>div {
+        /*동국 로고와 옆에 아이콘들 조정*/
+        max-width: 1800x;
+        margin: 0 auto;
+        /*상하 auto*/
+        /*padding: -5%;*/
     }
 
+    /* header */
+    header {
+        background-color: #F6F5EF;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        transition-duration: 0.2s;
+        padding: 10px 0;
+    }
+
+    section:nth-of-type(1) {
+        margin-top: 70px;
+    }
+
+    header div h1 {
+        float: left;
+        max-width: 70px;
+        width: 5.86%;
+        min-width: 40px;
+        margin: 0 0 0 5%;
+    }
+
+    header div h1 img {
+        width: 100%;
+        display: block;
+        margin-top: 0 auto;
+    }
+
+    /* header icon span */
+    .mobile_icon>a {
+        height: 25px;
+        width: 30px;
+        line-height: 20px;
+        display: block;
+    }
+
+    .mobile_icon>a:nth-child(1) {
+        background: url('../images/photo_Camera.png') no-repeat center / contain;
+        margin: 15px 20px;
+    }
+
+    .mobile_icon>a:nth-child(2) {
+        background: url('../images/Login.png') no-repeat center / contain;
+
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+
+
+
+    .mobile_icon>div span {
+        font-size: 30px;
+        margin-top: 12px;
+        height: 40px;
+        width: 40px;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* nav */
+    header div nav {
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        clear: both;
+        z-index: 110;
+        overflow-y: scroll;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 0.35s ease-out;
+        /* transition: property duration timing-function delay */
+    }
+
+    header div nav ul {
+        background-color: #111111;
+        width: 30%;
+        min-height: 100vh;
+    }
+
+    nav>ul>li ol {
+        position: relative;
+    }
+
+    nav ul li:not(:nth-child(1)) ol li:nth-child(1).active::after {
+        transform: rotateZ(135deg);
+    }
+
+    /* nav active */
+    nav.active {
+        transform: translateX(0%);
+    }
+
+    nav a {
+        color: white;
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 12px;
+        position: relative;
+    }
+
+    /* arrow btn */
+    nav ul li a span.material-icons {
+        position: absolute;
+        right: 20px;
+        font-size: 36px;
+        top: 10px;
+    }
+
+    nav ul li a span.active {
+        transform: rotateZ(180deg);
+    }
+
+    /* mobile_Search */
+    header ul li ol li {
+        padding: 20px 0 20px 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
+    }
+
+    header ul li:not(:nth-child(1)) ol li:nth-child(1) {
+        display: none;
+    }
+
+    .mobile_Search ol li input {
+        padding: 5px;
+        border: none;
+        width: 35%;
+        float: left;
+    }
+
+    .mobile_Search ol li button {
+        padding: 5px;
+        background-color: #807C79;
+        color: white;
+        box-sizing: border-box;
+        float: left;
+        height: 35px;
+    }
+
+    .mobile_Search ol li::after {
+        content: '';
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+
+    nav ul>li>a {
+        display: block;
+        padding: 20px 0 20px 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
+    }
+
+    nav ul li ol li:not(:nth-child(1)) {
+        height: 0;
+        overflow: hidden;
+        padding: 0 0 0 40px;
+        border: none;
+    }
+
+    nav ul li ol.active li:not(:nth-child(1)) {
+        height: 20px;
+        overflow: visible;
+        padding: 30px 0 30px 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    nav ol li {
+        color: white;
+        font-family: 'S-CoreDream-5Medium';
+        font-size: 16px;
+    }
+
+    nav ol li:not(:nth-child(1)) {
+        background-color: #25201D;
+    }
+
+    nav ol li:not(:nth-child(1)) a {
+        margin-left: 20px;
+        display: block;
+    }
+
+    /* nav close */
+    nav ul>li:nth-child(1) {
+        position: relative;
+    }
+
+    nav ul>li:nth-child(1) span {
+        position: absolute;
+        color: white;
+        top: 30%;
+        left: -60px;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    /* Delivery Order */
+
+
+    /* top button 맨위로 가는 버튼*/
+    .top_button {
+        border: none;
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        padding: 0;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        max-width: 5.86%;
+        min-width: 50px;
+        z-index: 9;
+    }
+
+    .top_button img {
+        display: block;
+        width: 100%;
+    }
+
+}
